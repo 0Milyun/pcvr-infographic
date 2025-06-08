@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Apex of Immersion: An AI-Powered Visual Guide to the 2025 PCVR Market</title>
+    <title>The Apex of Immersion: A Visual Guide to the 2025 PCVR Market</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,48 +71,13 @@
         .brilliant-blues-text-accent { color: #94d2bd; }
         .brilliant-blues-text-highlight { color: #e9d8a6; }
         .brilliant-blues-text-emphasis { color: #ee9b00; }
-        
-        .ai-button {
-            background-color: #ee9b00;
-            color: #001219;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            transition: background-color 0.3s;
-            border: 2px solid transparent;
-        }
-        .ai-button:hover {
-            background-color: #e9d8a6;
-            border-color: #ee9b00;
-        }
-        .ai-button:disabled {
-            background-color: #9b9b9b;
-            cursor: not-allowed;
-        }
-        #ai-recommendation-result p { margin-bottom: 1rem; }
-        .loader {
-            width: 48px;
-            height: 48px;
-            border: 5px solid #e9d8a6;
-            border-bottom-color: #005f73;
-            border-radius: 50%;
-            display: inline-block;
-            box-sizing: border-box;
-            animation: rotation 1s linear infinite;
-        }
-        @keyframes rotation {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        #aiSummaryModal { transition: opacity 0.3s ease; }
     </style>
 </head>
 <body class="brilliant-blues-bg text-gray-800">
 
     <header class="text-white text-center py-12 px-4">
         <h1 class="text-4xl md:text-6xl font-black brilliant-blues-text-highlight uppercase tracking-wider">The Apex of Immersion</h1>
-        <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto brilliant-blues-text-accent">An AI-Powered Visual Guide to the 2025 PCVR Market</p>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto brilliant-blues-text-accent">A Visual Guide to the 2025 PCVR Market</p>
     </header>
 
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -120,18 +85,60 @@
         <section id="intro" class="mb-16">
             <div class="stat-card text-center">
                 <h2 class="text-3xl md:text-5xl font-bold brilliant-blues-text-main">There Is No Single "Best" PCVR Headset.</h2>
-                <p class="mt-4 text-lg md:text-xl max-w-4xl mx-auto text-gray-600">The PCVR landscape is a vibrant arena defined by specialization. The "highest rated" headset depends on your priorities. This guide uses data and AI to help you find your perfect fit.</p>
+                <p class="mt-4 text-lg md:text-xl max-w-4xl mx-auto text-gray-600">The PCVR landscape is a vibrant arena defined by specialization. The "highest rated" headset depends on your priorities. This guide uses data to help you find your perfect fit.</p>
             </div>
         </section>
 
-        <section id="ai-recommender" class="mb-16">
+        <section id="decision-matrix" class="mb-16">
             <div class="stat-card">
-                <h2 class="text-3xl font-bold text-center mb-4 brilliant-blues-text-highlight">✨ AI-Powered Personal Shopper</h2>
-                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">Describe what you're looking for in a PCVR headset. Mention your budget, the types of games you play (e.g., flight sims, fast-paced shooters, social VR), and what's most important to you (e.g., comfort, visual quality, wireless freedom).</p>
-                <textarea id="user-prompt" class="w-full p-3 border-2 border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" rows="4" placeholder="e.g., I have a budget of around $1000 and mostly play racing simulators. I want the absolute best visual clarity possible and don't mind a wired connection..."></textarea>
-                <button id="get-recommendation-btn" class="ai-button w-full md:w-1/2 mx-auto">Get AI Recommendation</button>
-                <div id="ai-recommendation-result" class="mt-6 text-gray-700 p-4 bg-gray-50 rounded-lg min-h-[100px]">
-                    Your personalized recommendation will appear here...
+                <h2 class="text-3xl font-bold text-center mb-8 brilliant-blues-text-highlight">Decision Matrix: Find Your Perfect Fit</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">The "highest rated" headset is the one that best matches your priorities. This matrix guides you to a recommendation based on your primary goal.</p>
+                <div class="relative">
+                    <div class="flowchart-node w-1/2 mx-auto">
+                        <h4 class="font-bold">What is your top priority?</h4>
+                    </div>
+
+                    <div class="mt-16 flex flex-col md:flex-row justify-around items-stretch gap-y-16 md:gap-y-0 md:gap-x-8">
+                        <div class="relative w-full md:w-1/4 flex flex-col items-center flowchart-vertical-line">
+                            <div class="flowchart-node flex-grow flex items-center justify-center">
+                                <h5 class="font-bold">Wireless Freedom & Overall Value</h5>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <p class="font-bold brilliant-blues-text-secondary text-lg">Consider:</p>
+                                <p class="font-semibold">Meta Quest 3</p>
+                            </div>
+                        </div>
+
+                        <div class="relative w-full md:w-1/4 flex flex-col items-center flowchart-vertical-line">
+                            <div class="flowchart-node flex-grow flex items-center justify-center">
+                                <h5 class="font-bold">Maximum Visual Clarity & Resolution</h5>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <p class="font-bold brilliant-blues-text-secondary text-lg">Consider:</p>
+                                <p class="font-semibold">Pimax Crystal Light</p>
+                            </div>
+                        </div>
+
+                        <div class="relative w-full md:w-1/4 flex flex-col items-center flowchart-vertical-line">
+                             <div class="flowchart-node flex-grow flex items-center justify-center">
+                                <h5 class="font-bold">Ultimate Comfort & Light Weight</h5>
+                            </div>
+                             <div class="mt-8 text-center">
+                                <p class="font-bold brilliant-blues-text-secondary text-lg">Consider:</p>
+                                <p class="font-semibold">Bigscreen Beyond 2</p>
+                            </div>
+                        </div>
+
+                         <div class="relative w-full md:w-1/4 flex flex-col items-center flowchart-vertical-line">
+                             <div class="flowchart-node flex-grow flex items-center justify-center">
+                                <h5 class="font-bold">Tracking Precision & Premium Audio</h5>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <p class="font-bold brilliant-blues-text-secondary text-lg">Consider:</p>
+                                <p class="font-semibold">Valve Index</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -158,7 +165,6 @@
                         <p class="mt-2 text-sm text-gray-600">The benchmark for value, combining strong standalone features with excellent wireless PCVR and clear pancake lenses, making it the top choice for a broad audience.</p>
                         <div class="mt-4 chart-container h-64 sm:h-72"><canvas id="quest3Radar"></canvas></div>
                     </div>
-                    <button class="ai-button mt-4" onclick="getAiSummary('Meta Quest 3')">✨ AI Summary</button>
                 </div>
                 <div class="stat-card">
                     <div class="flex-grow">
@@ -167,7 +173,6 @@
                         <p class="mt-2 text-sm text-gray-600">Though its display is aging, the Index remains the gold standard for tracking precision, controller ergonomics, and integrated audio quality.</p>
                         <div class="mt-4 chart-container h-64 sm:h-72"><canvas id="indexRadar"></canvas></div>
                     </div>
-                     <button class="ai-button mt-4" onclick="getAiSummary('Valve Index')">✨ AI Summary</button>
                 </div>
                 <div class="stat-card">
                     <div class="flex-grow">
@@ -176,7 +181,6 @@
                         <p class="mt-2 text-sm text-gray-600">For those who demand the absolute best in resolution and clarity, featuring stunning QLED displays and sharp aspheric lenses.</p>
                          <div class="mt-4 chart-container h-64 sm:h-72"><canvas id="pimaxRadar"></canvas></div>
                     </div>
-                    <button class="ai-button mt-4" onclick="getAiSummary('Pimax Crystal Light')">✨ AI Summary</button>
                 </div>
                 <div class="stat-card">
                      <div class="flex-grow">
@@ -185,7 +189,6 @@
                         <p class="mt-2 text-sm text-gray-600">A revolution in comfort, this ultra-lightweight, custom-fit headset uses Micro-OLED displays for unparalleled long-session immersion.</p>
                          <div class="mt-4 chart-container h-64 sm:h-72"><canvas id="bigscreenRadar"></canvas></div>
                      </div>
-                     <button class="ai-button mt-4" onclick="getAiSummary('Bigscreen Beyond 2')">✨ AI Summary</button>
                 </div>
                 <div class="stat-card">
                     <div class="flex-grow">
@@ -194,7 +197,6 @@
                         <p class="mt-2 text-sm text-gray-600">Brings coveted OLED HDR visuals to PCVR, offering vibrant colors and true blacks, though with the caveats of Fresnel lenses and adapter-based setup.</p>
                         <div class="mt-4 chart-container h-64 sm:h-72"><canvas id="psvr2Radar"></canvas></div>
                     </div>
-                    <button class="ai-button mt-4" onclick="getAiSummary('Sony PSVR2 (PC)')">✨ AI Summary</button>
                 </div>
                  <div class="stat-card">
                     <div class="flex-grow">
@@ -203,7 +205,6 @@
                         <p class="mt-2 text-sm text-gray-600">A niche option prioritizing raw pixel count. It boasts an incredibly high resolution display paired with proven Lighthouse tracking.</p>
                         <div class="mt-4 chart-container h-64 sm:h-72"><canvas id="vivepro2Radar"></canvas></div>
                     </div>
-                    <button class="ai-button mt-4" onclick="getAiSummary('HTC Vive Pro 2')">✨ AI Summary</button>
                 </div>
             </div>
         </section>
@@ -227,18 +228,9 @@
     </main>
 
     <footer class="text-center py-8 px-4 text-gray-400">
-        <p>Data synthesized from the "Top PCVR Headset Analysis" report. All specifications and prices are based on market data as of early 2025 and are subject to change. AI features powered by Google Gemini.</p>
+        <p>Data synthesized from the <a href="https://docs.google.com/document/d/1LU6j9Tm0aAQkiwGd5tyCvutgA9CJn8ODv4s5G1MySnY/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">"Top PCVR Headset Analysis" report</a>. All specifications and prices are based on market data as of early 2025 and are subject to change.</p>
         <p class="text-sm mt-2">Confirmation: No SVG or Mermaid JS used. All charts rendered using Chart.js on Canvas elements.</p>
     </footer>
-    
-    <div id="aiSummaryModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden opacity-0" onclick="this.classList.add('hidden', 'opacity-0')">
-        <div class="stat-card max-w-lg w-full" onclick="event.stopPropagation()">
-            <h3 id="aiSummaryModalTitle" class="text-2xl font-bold brilliant-blues-text-secondary mb-4"></h3>
-            <div id="aiSummaryModalContent" class="text-gray-700"></div>
-            <button class="ai-button mt-6" onclick="document.getElementById('aiSummaryModal').classList.add('hidden', 'opacity-0')">Close</button>
-        </div>
-    </div>
-
 
     <script>
         const brilliantBlues = { main: '#005f73', secondary: '#0a9396', accent: '#94d2bd', highlight: '#e9d8a6', emphasis: '#ee9b00', dark: '#001219', light: '#cae9ff', gridColor: 'rgba(148, 210, 189, 0.2)', fontColor: '#001219' };
@@ -304,108 +296,6 @@
             type: 'bar', data: techAdoptionData,
             options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top', labels: { color: brilliantBlues.fontColor } }, tooltip: { callbacks: { title: tooltipTitleCallback } } }, scales: { x: { ticks: { color: brilliantBlues.fontColor }, grid: { display: false } }, y: { ticks: { color: brilliantBlues.fontColor, stepSize: 1 }, grid: { color: brilliantBlues.gridColor }, stacked: true } } }
         });
-
-        const recommendationBtn = document.getElementById('get-recommendation-btn');
-        const recommendationResultDiv = document.getElementById('ai-recommendation-result');
-        const userPromptTextarea = document.getElementById('user-prompt');
-        
-        const summaryModal = document.getElementById('aiSummaryModal');
-        const summaryModalTitle = document.getElementById('aiSummaryModalTitle');
-        const summaryModalContent = document.getElementById('aiSummaryModalContent');
-
-        const headsetData = `
-            - Meta Quest 3: The versatile all-rounder. Great value ($499), excellent wireless PCVR, clear pancake lenses. Best for a broad audience, mixed usage, and ease of use.
-            - Valve Index: The tracking & audio champion. Gold standard for tracking precision and controller ergonomics ($999 kit), but display is aging. Best for hardcore enthusiasts who demand perfect tracking.
-            - Pimax Crystal Light: The visual fidelity enthusiast. Top-tier resolution and clarity with QLED displays ($899 headset only). For users who want the absolute best visuals, especially for simulators.
-            - Bigscreen Beyond 2: The featherweight champion. Ultra-lightweight and custom-fit for maximum comfort ($1369 with trackers/base stations). Best for long social VR sessions.
-            - Sony PSVR2 (PC): The OLED wildcard. Brings OLED HDR visuals to PC ($610 with adapter), but has Fresnel lenses. A good choice for those who prioritize vibrant colors and deep blacks.
-            - HTC Vive Pro 2: The high-resolution contender. Prioritizes raw pixel count with Lighthouse tracking ($1300+ kit). A niche choice for professionals or users with specific high-res needs.
-        `;
-
-        async function getAiSummary(headsetName) {
-            summaryModalTitle.textContent = `✨ AI Summary: ${headsetName}`;
-            summaryModalContent.innerHTML = `<div class="loader mx-auto"></div>`;
-            summaryModal.classList.remove('hidden');
-            setTimeout(()=>summaryModal.classList.remove('opacity-0'), 10);
-            
-            const prompt = `You are a helpful assistant. In two concise sentences, summarize the key strengths and ideal user for the ${headsetName} PCVR headset.`;
-            
-            try {
-                const text = await callGemini(prompt);
-                summaryModalContent.innerHTML = `<p>${text}</p>`;
-            } catch (error) {
-                console.error('Error fetching AI summary:', error);
-                summaryModalContent.innerHTML = `<p class="text-red-500">Sorry, I couldn't generate a summary at this time. Please try again later.</p>`;
-            }
-        }
-        
-        recommendationBtn.addEventListener('click', async () => {
-            const userPrompt = userPromptTextarea.value;
-            if (!userPrompt.trim()) {
-                recommendationResultDiv.innerHTML = '<p class="text-red-500">Please describe what you are looking for first.</p>';
-                return;
-            }
-
-            recommendationResultDiv.innerHTML = '<div class="loader mx-auto"></div><p class="text-center mt-2">Generating your personalized recommendation...</p>';
-            recommendationBtn.disabled = true;
-
-            const fullPrompt = `You are an expert in PCVR technology. Your task is to provide a personalized PCVR headset recommendation based on the user's needs.
-
-            Here is the summary of the top PCVR headsets in 2025:
-            ${headsetData}
-
-            A user has the following requirements: "${userPrompt}".
-
-            Based on this, which headset (or headsets) would you recommend and why? Explain your reasoning clearly, referencing the user's specific needs and the strengths/weaknesses of the recommended headset(s). Format your response as simple HTML paragraphs. Start with a bolded h3 tag with your top recommendation.`;
-
-            try {
-                const text = await callGemini(fullPrompt);
-                recommendationResultDiv.innerHTML = text;
-            } catch (error) {
-                console.error('Error fetching AI recommendation:', error);
-                recommendationResultDiv.innerHTML = '<p class="text-red-500">Sorry, an error occurred while generating your recommendation. Please check the console for details and try again.</p>';
-            } finally {
-                recommendationBtn.disabled = false;
-            }
-        });
-        
-        async function callGemini(prompt) {
-             const apiKey = ""; 
-             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-             
-             const payload = {
-                 contents: [{ role: "user", parts: [{ text: prompt }] }],
-                 generationConfig: {
-                    temperature: 0.7,
-                    topK: 1,
-                    topP: 1,
-                    maxOutputTokens: 8192,
-                 }
-             };
-             
-             const response = await fetch(apiUrl, {
-                 method: 'POST',
-                 headers: { 'Content-Type': 'application/json' },
-                 body: JSON.stringify(payload)
-             });
-             
-             if (!response.ok) {
-                throw new Error(`API call failed with status: ${response.status}`);
-             }
-
-             const result = await response.json();
-             
-             if (result.candidates && result.candidates.length > 0 && result.candidates[0].content && result.candidates[0].content.parts && result.candidates[0].content.parts.length > 0) {
-                 return result.candidates[0].content.parts[0].text.replace(/\n/g, '<br>');
-             } else {
-                 console.log("Unexpected Gemini API response structure: ", result);
-                 throw new Error("Could not extract text from Gemini API response.");
-             }
-        }
-        
-        // Expose the summary function to global scope so inline onclick can find it
-        window.getAiSummary = getAiSummary;
-
     </script>
 
 </body>
